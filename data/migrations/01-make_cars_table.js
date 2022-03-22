@@ -5,7 +5,7 @@ exports.up = function (knex, Promise) {
       .notNullable();
     tbl.string('model')
       .notNullable();
-    tbl.decimal('mileage')
+    tbl.integer('mileage')
       .notNullable();
     tbl.string('vin')
       .notNullable()

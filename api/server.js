@@ -8,4 +8,4 @@ const carsRouter = require('./cars/cars-router');
 server.use('/api/cars/', carsRouter);
 
 // Export
-module.exports = server
+module.exports = server;
