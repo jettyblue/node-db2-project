@@ -5,7 +5,11 @@ const getAll = () => {
 }
 
 const getById = async (id) => {
-  return await db('cars').where({ id });
+  return await db('cars').where({ id }).first();
+}
+
+const getByVin = (vin) => {
+  return db('cars').where('vin', vin).first();
 }
 
 const create = async (car) => {
